@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 989b4a70b9e5b8341810e88dcb9a31e8, type: 3}
   m_Name: LegParts
   m_EditorClassIdentifier: 
-  Sprites:
-  - {fileID: 21300000, guid: 2eeda70fe32b87c47b022e0bf9e50e0c, type: 3}
-  - {fileID: 21300000, guid: d6d5dd569297a644e82dc9cabe0f5871, type: 3}
-  - {fileID: 21300000, guid: 3df5efd5a3e963f428d52c41b5ee2d46, type: 3}
+  Parts:
+  - {fileID: 11400000, guid: 9f4dc51d8143521499ffae801cbff7ed, type: 2}
+  - {fileID: 11400000, guid: 8c9906ef8ba21d944a7d8c9c1c65002b, type: 2}
+  - {fileID: 11400000, guid: 357bdbb741972df4199a1bb5fe4c0b97, type: 2}

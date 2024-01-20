@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 989b4a70b9e5b8341810e88dcb9a31e8, type: 3}
   m_Name: BodyParts
   m_EditorClassIdentifier: 
-  Sprites:
-  - {fileID: 21300000, guid: 4cc8baae5ca01bb489267e87bb33a485, type: 3}
-  - {fileID: 21300000, guid: cbd0526ca6531ce49a99ad344e1248f1, type: 3}
-  - {fileID: 21300000, guid: 5b2a1762c4a68dc40811054318fa250e, type: 3}
+  Parts:
+  - {fileID: 11400000, guid: 16ea090f5b315f94e8a37e8c0524d480, type: 2}
+  - {fileID: 11400000, guid: bae3f5600cd7abc45b9572695789b2f4, type: 2}
+  - {fileID: 11400000, guid: c546238067a7f7b4d884c498aa88de5b, type: 2}

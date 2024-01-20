@@ -8,9 +8,9 @@ public class PartView : MonoBehaviour
     [SerializeField]
     public Image Image;
 
-    public void SetSprite(Sprite sprite)
+    public void SetPart(PartSO part)
     {
-        Image.sprite = sprite;
+        Image.sprite = part.Sprite;
     }
 
     public void SetColor(Color color)

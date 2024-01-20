@@ -9,13 +9,13 @@ public class PartController : MonoBehaviour
     public SOPartsSet PartsSet;
 
     [SerializeField]
-    public UnityEvent<Sprite> OnPartUpdated;
+    public UnityEvent<PartSO> OnPartUpdated;
 
     [SerializeField]
     public UnityEvent<Color> OnColorUpdated;
 
-    public int PartsCount => PartsSet == null ? 0 : PartsSet.Sprites.Count;
-    public Sprite CurrentPartSprite => PartsCount == 0 ? null : PartsSet.Sprites[_currentIndex];
+    public int PartsCount => PartsSet == null ? 0 : PartsSet.Parts.Count;
+    public PartSO CurrentPart => PartsCount == 0 ? null : PartsSet.Parts[_currentIndex];
 
     int _currentIndex;
 
@@ -23,11 +23,11 @@ public class PartController : MonoBehaviour
     {
         _currentIndex = 0;
 
-        InvokeUpdateSprite();
+        InvokeUpdatePart();
         ChangeColor(Color.white);
     }
 
-    void InvokeUpdateSprite()
+    void InvokeUpdatePart()
     {
         if(PartsCount == 0)
         {
@@ -35,10 +35,10 @@ public class PartController : MonoBehaviour
             return;
         }
 
-        OnPartUpdated?.Invoke(CurrentPartSprite);
+        OnPartUpdated?.Invoke(CurrentPart);
     }
 
-    public void GoToNextSprite()
+    public void GoToNextPart()
     {
         if(PartsCount == 0)
         {
@@ -48,10 +48,10 @@ public class PartController : MonoBehaviour
 
         _currentIndex = (_currentIndex + 1) % PartsCount;
 
-        InvokeUpdateSprite();
+        InvokeUpdatePart();
     }
 
-    public void GoToPreviousSprite()
+    public void GoToPreviousPart()
     {
         if(PartsCount == 0)
         {
@@ -61,7 +61,20 @@ public class PartController : MonoBehaviour
 
         _currentIndex = (_currentIndex - 1 + PartsCount) % PartsCount;
 
-        InvokeUpdateSprite();
+        InvokeUpdatePart();
+    }
+
+    public void SetCurrentPart(int index)
+    {
+        if(PartsCount == 0)
+        {
+            Debug.LogError("No parts found.");
+            return;
+        }
+
+        _currentIndex = index % PartsCount;
+
+        InvokeUpdatePart();
     }
 
     public void ChangeColor(Color color)

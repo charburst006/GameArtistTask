@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989b4a70b9e5b8341810e88dcb9a31e8, type: 3}
-  m_Name: HeadParts
+  m_Script: {fileID: 11500000, guid: 2cda325c16866554387940f0c3245be5, type: 3}
+  m_Name: Head2
   m_EditorClassIdentifier: 
-  Sprites:
-  - {fileID: 21300000, guid: 5da1f53126a427a4db4ba29c3edccba6, type: 3}
-  - {fileID: 21300000, guid: f1de3bbadb07244458c73552b5199733, type: 3}
+  Sprite: {fileID: 21300000, guid: c915aad7ca6854d4cb4af59f2372d95f, type: 3}
+  Tags:
+  - ginger
+  - ponytail
