@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cda325c16866554387940f0c3245be5, type: 3}
   m_Name: Head1
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 51e10e88c1d7e8f4c904ed91803b1468, type: 3}
+  Sprite: {fileID: 21300000, guid: 5c3d6e20ed344094d8aa86249d76d74f, type: 3}
   Tags:
   - basic
   - brown

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cda325c16866554387940f0c3245be5, type: 3}
   m_Name: Head2
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: c915aad7ca6854d4cb4af59f2372d95f, type: 3}
+  Sprite: {fileID: 21300000, guid: 567608cd186caaf4ea92863d6d4e34b5, type: 3}
   Tags:
   - ginger
   - ponytail
